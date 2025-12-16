@@ -4,8 +4,8 @@ CREATE TABLE users (
     username VARCHAR(50) NOT NULL,
     income_level VARCHAR(20),
     education VARCHAR(50),
-    CONSTRAINT chk_users_name CHECK (username SIMILAR TO '[a-zA-Z0-9 ]{3,50}'),
-    CONSTRAINT chk_users_income CHECK (income_level IN ('Low', 'Medium', 'High'))
+    CONSTRAINT chk_usr_nm CHECK (username SIMILAR TO '[a-zA-Z0-9 ]{3,50}'),
+    CONSTRAINT chk_usr_inc CHECK (income_level IN ('Low', 'Medium', 'High'))
 );
 
 -- 2. Providers Table
@@ -22,8 +22,8 @@ CREATE TABLE housing (
     price DECIMAL(10, 2) NOT NULL,
     is_safe_area BOOLEAN DEFAULT FALSE,
     has_workspace BOOLEAN DEFAULT FALSE,
-    CONSTRAINT fk_housing_provider FOREIGN KEY (provider_id) REFERENCES providers (provider_id),
-    CONSTRAINT chk_housing_price CHECK (price > 0)
+    CONSTRAINT fk_hou_prov FOREIGN KEY (provider_id) REFERENCES providers (provider_id),
+    CONSTRAINT chk_hou_prc CHECK (price > 0)
 );
 
 -- 4. Articles Table
@@ -41,8 +41,8 @@ CREATE TABLE summaries (
     summary_text TEXT NOT NULL,
     generated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     quality_score INT,
-    CONSTRAINT fk_summaries_article FOREIGN KEY (article_id) REFERENCES articles (article_id),
-    CONSTRAINT chk_summary_quality CHECK (quality_score BETWEEN 1 AND 5)
+    CONSTRAINT fk_sum_art FOREIGN KEY (article_id) REFERENCES articles (article_id),
+    CONSTRAINT chk_sum_qlty CHECK (quality_score BETWEEN 1 AND 5)
 );
 
 -- 6. Food Orders Table
@@ -51,7 +51,7 @@ CREATE TABLE food_orders (
     user_id INT NOT NULL,
     order_status VARCHAR(20) DEFAULT 'Pending',
     total_amount DECIMAL(10, 2),
-    CONSTRAINT fk_food_user FOREIGN KEY (user_id) REFERENCES users (user_id)
+    CONSTRAINT fk_fd_ord_usr FOREIGN KEY (user_id) REFERENCES users (user_id)
 );
 
 -- 7. Nutrition Items Table
@@ -60,6 +60,7 @@ CREATE TABLE nutrition_items (
     order_id INT NOT NULL,
     item_name VARCHAR(100) NOT NULL,
     calories INT,
-    CONSTRAINT fk_nutrition_order FOREIGN KEY (order_id) REFERENCES food_orders (order_id)
+    CONSTRAINT fk_nut_itm_ord FOREIGN KEY (order_id) REFERENCES food_orders (order_id)
 );
+
 
