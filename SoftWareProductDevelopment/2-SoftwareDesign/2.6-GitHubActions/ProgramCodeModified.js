@@ -1,7 +1,3 @@
-var name="Student1"
-    var income = "Low"
-
-function show( ){
-console.log(name+income)
-}
-show( )
+function test() {
+  console.log("This is a broken file"
+  // Ми спеціально забули закрити дужку і фігурну дужку
