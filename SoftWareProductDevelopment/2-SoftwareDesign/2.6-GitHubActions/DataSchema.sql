@@ -22,7 +22,7 @@ CREATE TABLE housing (
     price DECIMAL(10, 2) NOT NULL,
     is_safe_area BOOLEAN DEFAULT FALSE,
     has_workspace BOOLEAN DEFAULT FALSE,
-    CONSTRAINT fk_prov FOREIGN KEY (provider_id) REFERENCES providers (provider_id),
+    FOREIGN KEY (provider_id) REFERENCES providers (provider_id),
     CONSTRAINT chk_price CHECK (price > 0)
 );
 
@@ -41,7 +41,7 @@ CREATE TABLE summaries (
     summary_text TEXT NOT NULL,
     generated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     quality_score INT,
-    CONSTRAINT fk_art FOREIGN KEY (article_id) REFERENCES articles (article_id),
+    FOREIGN KEY (article_id) REFERENCES articles (article_id),
     CONSTRAINT chk_qual CHECK (quality_score BETWEEN 1 AND 5)
 );
 
@@ -51,7 +51,7 @@ CREATE TABLE food_orders (
     user_id INT NOT NULL,
     order_status VARCHAR(20) DEFAULT 'Pending',
     total_amount DECIMAL(10, 2),
-    CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES users (user_id)
+    FOREIGN KEY (user_id) REFERENCES users (user_id)
 );
 
 -- 7. Nutrition Items Table
@@ -60,7 +60,6 @@ CREATE TABLE nutrition_items (
     order_id INT NOT NULL,
     item_name VARCHAR(100) NOT NULL,
     calories INT,
-    CONSTRAINT fk_order FOREIGN KEY (order_id) REFERENCES food_orders (order_id)
+    FOREIGN KEY (order_id) REFERENCES food_orders (order_id)
 );
-
 
