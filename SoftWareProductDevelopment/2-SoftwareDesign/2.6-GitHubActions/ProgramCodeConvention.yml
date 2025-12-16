@@ -1,0 +1,17 @@
+name: Program Code Linter
+on:
+  push:
+    branches: [ laboratory-work-4 ]
+jobs:
+  JavaScriptCodeLinter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+      - name: Super-Linter
+        uses: github/super-linter@v4
+        env:
+          VALIDATE_JAVASCRIPT_ES: true
+          DEFAULT_BRANCH: laboratory-work-4
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FILTER_REGEX_INCLUDE: .*SoftWareProductDevelopment/2-SoftwareDesign/2.6-GitHubActions/.*\.js

@@ -1,0 +1,49 @@
+@startuml
+autonumber
+skinparam style strictuml
+
+title Тестування логіки ЛР №3: Пошук та генерація резюме
+
+actor "User (Користувач)" as User
+participant "Frontend (Web)" as UI
+participant "Backend (Controller)" as Ctrl
+database "PostgreSQL\n(Tables: articles, summaries)" as DB
+participant "AI Service" as AI
+
+' 1. Користувач ініціює дію
+User -> UI: Натискає "Отримати резюме" (articleID)
+activate UI
+UI -> Ctrl: POST /api/summaries/generate {articleID}
+activate Ctrl
+
+' 2. Тестування логіки БД (ЛР №3)
+Ctrl -> DB: SELECT * FROM summaries WHERE article_id = ?
+activate DB
+
+alt Резюме вже існує (Cache Hit)
+    DB --> Ctrl: Return Summary Object
+    Ctrl --> UI: JSON (Existing Summary)
+else Резюме відсутнє (Cache Miss)
+    DB --> Ctrl: null
+    deactivate DB
+    
+    ' 3. Тестування інтеграції з AI
+    Ctrl -> AI: Generate(article_text)
+    activate AI
+    AI --> Ctrl: generated_text
+    deactivate AI
+    
+    ' 4. Збереження результату (INSERT)
+    Ctrl -> DB: INSERT INTO summaries (article_id, summary_text...)
+    activate DB
+    DB --> Ctrl: Success (new_summary_id)
+    deactivate DB
+    
+    Ctrl --> UI: JSON (New Summary)
+end
+
+deactivate Ctrl
+UI --> User: Відображає текст резюме
+deactivate UI
+
+@enduml

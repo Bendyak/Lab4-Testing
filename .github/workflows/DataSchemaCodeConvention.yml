@@ -1,0 +1,20 @@
+name: SQL Data Schema Linter
+on: [push]
+
+jobs:
+  SQL-Check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Install SQLFluff
+        run: pip install sqlfluff
+
+      - name: Lint Correct Schema (Should Pass)
+        run: sqlfluff lint SoftWareProductDevelopment/2-SoftwareDesign/2.6-GitHubActions/DataSchema.sql --dialect postgres
+
+      - name: Lint Modified Schema (Should Fail)
+        # continue-on-error дозволяє процесу не падати повністю, щоб ми побачили лог помилок
+        continue-on-error: true
+        run: sqlfluff lint SoftWareProductDevelopment/2-SoftwareDesign/2.6-GitHubActions/DataSchemaModified.sql --dialect postgres

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.5">
+  <diagram name="Страница — 1" id="AvaOKGE0tKc82UPROLjg">
+    <mxGraphModel dx="1310" dy="1158" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-1" value="" style="shape=rectangle;rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="340" width="750" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-11" value="Студент / Дослідник" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="360" y="400" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-12" value="Адміністратор" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="1250" y="390" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-13" value="Орендодавець" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="350" y="690" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-14" value="OLX, Glovo, Google Scholar" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="1250" y="730" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-4" value="Пошук житла" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="410" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-24" value="&lt;span style=&quot;font-weight: 600; color: rgb(15, 17, 21); font-family: quote-cjk-patch, Inter, system-ui, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, Cantarell, &amp;quot;Open Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 16px; text-align: left; background-color: rgb(255, 255, 255);&quot;&gt;Інформаційна платформа&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="760" y="270" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-25" value="Управління аккаунтом" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="755" y="730" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-26" value="Пошук ваіантів харчування" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="530" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-27" value="&lt;pre style=&quot;font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 13px; line-height: 22px; font-family: Menlo, Monaco, &amp;quot;Cascadia Mono&amp;quot;, Consolas, &amp;quot;Ubuntu Mono&amp;quot;, &amp;quot;DejaVu Sans Mono&amp;quot;, &amp;quot;Liberation Mono&amp;quot;, &amp;quot;JetBrains Mono&amp;quot;, &amp;quot;Fira Code&amp;quot;, Cousine, &amp;quot;Roboto Mono&amp;quot;, &amp;quot;Courier New&amp;quot;, Courier, sans-serif, system-ui; overflow: auto; text-wrap-mode: wrap; word-break: break-all; padding: 16px; color: rgb(15, 17, 21); text-align: start; margin: 0px !important;&quot;&gt;Зв&#39;язатися з орендодавцем&lt;/pre&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1010" y="575" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-28" value="Сповіщати про подіі" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1010" y="640" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-39" value="Пошук наукових ресурсів" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="510" y="610" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-41" value="перевірити оголошення" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="910" y="410" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-44" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="Zf0S8YRfHQirlXDAB9QV-11" target="Zf0S8YRfHQirlXDAB9QV-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="740" y="590" as="sourcePoint" />
+            <mxPoint x="790" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-45" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="Zf0S8YRfHQirlXDAB9QV-11" target="Zf0S8YRfHQirlXDAB9QV-26" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="740" y="590" as="sourcePoint" />
+            <mxPoint x="790" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-46" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="Zf0S8YRfHQirlXDAB9QV-11" target="Zf0S8YRfHQirlXDAB9QV-39" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="740" y="590" as="sourcePoint" />
+            <mxPoint x="790" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-48" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="Zf0S8YRfHQirlXDAB9QV-11" target="Zf0S8YRfHQirlXDAB9QV-25" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="740" y="590" as="sourcePoint" />
+            <mxPoint x="790" y="540" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="630" y="490" />
+              <mxPoint x="810" y="590" />
+              <mxPoint x="740" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-49" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.402;exitY=0.651;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="Zf0S8YRfHQirlXDAB9QV-12" target="Zf0S8YRfHQirlXDAB9QV-41" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="740" y="590" as="sourcePoint" />
+            <mxPoint x="790" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-50" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.441;exitY=0.69;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="Zf0S8YRfHQirlXDAB9QV-12" target="Zf0S8YRfHQirlXDAB9QV-25" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="820" y="540" as="sourcePoint" />
+            <mxPoint x="870" y="490" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1080" y="470" />
+              <mxPoint x="960" y="500" />
+              <mxPoint x="860" y="540" />
+              <mxPoint x="840" y="530" />
+              <mxPoint x="890" y="550" />
+              <mxPoint x="880" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-52" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.48;exitY=0.671;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Zf0S8YRfHQirlXDAB9QV-13" target="Zf0S8YRfHQirlXDAB9QV-27" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="740" y="590" as="sourcePoint" />
+            <mxPoint x="790" y="540" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="850" y="670" />
+              <mxPoint x="810" y="500" />
+              <mxPoint x="740" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-55" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" parent="1" source="Zf0S8YRfHQirlXDAB9QV-14" target="Zf0S8YRfHQirlXDAB9QV-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="740" y="590" as="sourcePoint" />
+            <mxPoint x="790" y="540" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="890" y="630" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-56" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.792;entryY=0.859;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Zf0S8YRfHQirlXDAB9QV-14" target="Zf0S8YRfHQirlXDAB9QV-26" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="740" y="590" as="sourcePoint" />
+            <mxPoint x="790" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-57" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="Zf0S8YRfHQirlXDAB9QV-14" target="Zf0S8YRfHQirlXDAB9QV-39" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1140" y="750" as="sourcePoint" />
+            <mxPoint x="790" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-58" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.068;entryY=0.329;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Zf0S8YRfHQirlXDAB9QV-11" target="Zf0S8YRfHQirlXDAB9QV-28" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="740" y="590" as="sourcePoint" />
+            <mxPoint x="790" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-59" value="Відфільтрувати житло" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="780" y="465.77" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-60" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Zf0S8YRfHQirlXDAB9QV-4" target="Zf0S8YRfHQirlXDAB9QV-59" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="440" as="sourcePoint" />
+            <mxPoint x="740" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-61" value="&lt;pre style=&quot;font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 13px; line-height: 22px; font-family: Menlo, Monaco, &amp;quot;Cascadia Mono&amp;quot;, Consolas, &amp;quot;Ubuntu Mono&amp;quot;, &amp;quot;DejaVu Sans Mono&amp;quot;, &amp;quot;Liberation Mono&amp;quot;, &amp;quot;JetBrains Mono&amp;quot;, &amp;quot;Fira Code&amp;quot;, Cousine, &amp;quot;Roboto Mono&amp;quot;, &amp;quot;Courier New&amp;quot;, Courier, sans-serif, system-ui; overflow: auto; text-wrap-mode: wrap; word-break: break-all; padding: 16px; color: rgb(15, 17, 21); text-align: start; margin: 0px !important;&quot;&gt;«include»&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=25;" parent="1" vertex="1">
+          <mxGeometry x="715" y="425.77" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-63" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=0.91;exitY=0.241;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="Zf0S8YRfHQirlXDAB9QV-4" target="Zf0S8YRfHQirlXDAB9QV-41" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="730" y="420" as="sourcePoint" />
+            <mxPoint x="780" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-65" value="&lt;pre style=&quot;font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 13px; line-height: 22px; font-family: Menlo, Monaco, &amp;quot;Cascadia Mono&amp;quot;, Consolas, &amp;quot;Ubuntu Mono&amp;quot;, &amp;quot;DejaVu Sans Mono&amp;quot;, &amp;quot;Liberation Mono&amp;quot;, &amp;quot;JetBrains Mono&amp;quot;, &amp;quot;Fira Code&amp;quot;, Cousine, &amp;quot;Roboto Mono&amp;quot;, &amp;quot;Courier New&amp;quot;, Courier, sans-serif, system-ui; overflow: auto; text-wrap-mode: wrap; word-break: break-all; padding: 16px; color: rgb(15, 17, 21); text-align: start; margin: 0px !important;&quot;&gt;«include»&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=0;" parent="1" vertex="1">
+          <mxGeometry x="754.9992935218298" y="385.7701601364714" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-68" value="Відфільтрувати харчування" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1010" y="520" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-70" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0.237;entryY=0.874;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="Zf0S8YRfHQirlXDAB9QV-68" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="670" y="550" as="sourcePoint" />
+            <mxPoint x="790" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-71" value="&lt;pre style=&quot;font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 13px; line-height: 22px; font-family: Menlo, Monaco, &amp;quot;Cascadia Mono&amp;quot;, Consolas, &amp;quot;Ubuntu Mono&amp;quot;, &amp;quot;DejaVu Sans Mono&amp;quot;, &amp;quot;Liberation Mono&amp;quot;, &amp;quot;JetBrains Mono&amp;quot;, &amp;quot;Fira Code&amp;quot;, Cousine, &amp;quot;Roboto Mono&amp;quot;, &amp;quot;Courier New&amp;quot;, Courier, sans-serif, system-ui; overflow: auto; text-wrap-mode: wrap; word-break: break-all; padding: 16px; color: rgb(15, 17, 21); text-align: start; margin: 0px !important;&quot;&gt;«include»&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=0;" parent="1" vertex="1">
+          <mxGeometry x="890" y="520" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-74" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=0.925;exitY=0.771;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.046;entryY=0.763;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Zf0S8YRfHQirlXDAB9QV-4" target="Zf0S8YRfHQirlXDAB9QV-27" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="810" y="590" as="sourcePoint" />
+            <mxPoint x="860" y="540" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="960" y="630" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zf0S8YRfHQirlXDAB9QV-75" value="&lt;pre style=&quot;font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 13px; line-height: 22px; font-family: Menlo, Monaco, &amp;quot;Cascadia Mono&amp;quot;, Consolas, &amp;quot;Ubuntu Mono&amp;quot;, &amp;quot;DejaVu Sans Mono&amp;quot;, &amp;quot;Liberation Mono&amp;quot;, &amp;quot;JetBrains Mono&amp;quot;, &amp;quot;Fira Code&amp;quot;, Cousine, &amp;quot;Roboto Mono&amp;quot;, &amp;quot;Courier New&amp;quot;, Courier, sans-serif, system-ui; overflow: auto; text-wrap-mode: wrap; word-break: break-all; padding: 16px; color: rgb(15, 17, 21); text-align: start; margin: 0px !important;&quot;&gt;&lt;pre style=&quot;font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; line-height: 22px; font-family: Menlo, Monaco, &amp;quot;Cascadia Mono&amp;quot;, Consolas, &amp;quot;Ubuntu Mono&amp;quot;, &amp;quot;DejaVu Sans Mono&amp;quot;, &amp;quot;Liberation Mono&amp;quot;, &amp;quot;JetBrains Mono&amp;quot;, &amp;quot;Fira Code&amp;quot;, Cousine, &amp;quot;Roboto Mono&amp;quot;, &amp;quot;Courier New&amp;quot;, Courier, sans-serif, system-ui; overflow: auto; text-wrap-mode: wrap; word-break: break-all; padding: 16px; margin: 0px !important;&quot;&gt;extend&lt;/pre&gt;&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=0;" parent="1" vertex="1">
+          <mxGeometry x="890" y="585" width="130" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

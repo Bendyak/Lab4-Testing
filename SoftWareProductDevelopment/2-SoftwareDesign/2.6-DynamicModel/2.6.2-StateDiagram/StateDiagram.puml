@@ -1,0 +1,21 @@
+@startuml
+hide empty description
+title Тестування станів об'єкта "Summary" (з ЛР №3)
+
+[*] --> Created : Запит створено
+
+state "Created" as Created : Запис в БД є,\nтексту немає
+state "Processing" as Processing : Запит до AI
+state "Completed" as Completed : Текст збережено
+state "Rated" as Rated : Оцінка користувача
+state "Error" as Error : Помилка API
+
+Created --> Processing : Start Job
+Processing --> Completed : Success (UPDATE summaries SET text=...)
+Processing --> Error : Fail
+
+Error --> Created : Retry
+Completed --> Rated : User Feedback (UPDATE summaries SET score=...)
+Rated --> [*]
+
+@enduml

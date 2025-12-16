@@ -1,0 +1,14 @@
+name: Print Software Versions
+on: [push]
+jobs:
+  Print-Versions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Java
+        run: java --version
+      - name: Check Node
+        run: node --version
+      - name: Check Python
+        run: python --version
+      - name: Check PostgreSQL Client
+        run: psql --version

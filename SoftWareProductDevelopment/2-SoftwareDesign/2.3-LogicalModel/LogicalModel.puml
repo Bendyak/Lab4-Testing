@@ -1,0 +1,69 @@
+@startuml
+hide circle
+skinparam linetype ortho
+
+entity "users" as u {
+  *user_id : SERIAL <<PK>>
+  --
+  *name : VARCHAR(50)
+  income_level : VARCHAR(20)
+  education : VARCHAR(50)
+}
+
+entity "housing" as h {
+  *housing_id : SERIAL <<PK>>
+  --
+  *provider_id : INT <<FK>>
+  *address : VARCHAR(255)
+  *price : DECIMAL(10,2)
+  is_safe_area : BOOLEAN
+  has_workspace : BOOLEAN
+}
+
+entity "providers" as p {
+  *provider_id : SERIAL <<PK>>
+  --
+  *name : VARCHAR(100)
+}
+
+entity "articles" as a {
+  *article_id : SERIAL <<PK>>
+  --
+  *title : VARCHAR(255)
+  doi : VARCHAR(100)
+  publish_date : DATE
+}
+
+entity "summaries" as s {
+  *summary_id : SERIAL <<PK>>
+  --
+  *article_id : INT <<FK>>
+  *summary_text : TEXT
+  generated_at : TIMESTAMP
+  quality_score : INT
+}
+
+entity "food_orders" as fo {
+  *order_id : SERIAL <<PK>>
+  --
+  *user_id : INT <<FK>>
+  *status : VARCHAR(20)
+  total_amount : DECIMAL(10,2)
+}
+
+entity "nutrition_items" as ni {
+  *item_id : SERIAL <<PK>>
+  --
+  *order_id : INT <<FK>>
+  *name : VARCHAR(100)
+  calories : INT
+}
+
+' Relationships
+p ||..|{ h : "provides"
+u ||..o{ h : "rents"
+a ||..|| s : "has summary"
+u }o..o{ a : "reads"
+u ||..o{ fo : "places"
+fo ||..|{ ni : "contains"
+@enduml

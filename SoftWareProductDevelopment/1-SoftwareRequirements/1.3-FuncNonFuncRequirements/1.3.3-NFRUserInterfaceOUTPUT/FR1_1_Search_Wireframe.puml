@@ -1,0 +1,29 @@
+@startwireframe
+skinparam {
+  shadowing false
+}
+
+Window "Пошук наукових ресурсів" {
+  Title: Пошук наукових ресурсів
+
+  TabHeader "Головна" as Tab1
+  TabHeader "Пошук" as Tab2 {
+    Box "Панель пошуку" {
+      Label "Ключові слова:"
+      TextField("SearchQuery", 40)
+      Button "Пошук" as SearchButton
+      Checkbox "Розширений пошук" as AdvancedSearch
+    }
+  }
+  
+  Box "Результати пошуку (FR1.2)" {
+    Grid {
+      {Заголовок стат | Автор | Рік | Резюме}
+      | ... | ... | ... | ... |
+      | ... | ... | ... | ... |
+      | ... | ... | ... | ... |
+    }
+    StatusBar "Знайдено: N статей"
+  }
+}
+@endwireframe

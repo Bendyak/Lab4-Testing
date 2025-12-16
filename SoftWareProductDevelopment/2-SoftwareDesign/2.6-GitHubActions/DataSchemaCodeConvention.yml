@@ -1,0 +1,18 @@
+name: SQL Linter
+on:
+  push:
+    branches: [ laboratory-work-4 ]
+jobs:
+  SQLLinter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+      - name: Install SQLFluff
+        run: pip install sqlfluff
+      - name: Lint SQL Files
+        run: |
+          # Перевіряємо обидва файли. Modified повинен викликати помилку.
+          sqlfluff lint SoftWareProductDevelopment/2-SoftwareDesign/2.6-GitHubActions/DataSchema.sql --dialect postgres
+          # Наступна команда може впасти з помилкою (це очікувано для тесту)
+          sqlfluff lint SoftWareProductDevelopment/2-SoftwareDesign/2.6-GitHubActions/DataSchemaModified.sql --dialect postgres || true

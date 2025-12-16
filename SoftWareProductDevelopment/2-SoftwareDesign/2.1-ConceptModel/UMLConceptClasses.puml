@@ -1,0 +1,51 @@
+@startuml
+skinparam ClassAttributeIconSize 0
+
+class User {
+  + name : string
+  + incomeLevel : string
+  + education : string
+}
+
+class Housing {
+  + address : string
+  + price : decimal
+  + isSafeArea : boolean
+  + hasWorkspace : boolean
+}
+
+class Provider {
+  + name : string
+}
+
+class Article {
+  + title : string
+  + DOI : string
+  + publishDate : date
+}
+
+class Summary {
+  + summaryText : string
+  + generatedAt : datetime
+  + qualityScore : int
+}
+
+class FoodOrder {
+  + status : string
+  + totalAmount : decimal
+}
+
+class NutritionItem {
+  + name : string
+  + calories : int
+}
+
+' Relationships
+User "1" -- "0..*" Housing : rents/views
+Provider "1" -- "1..*" Housing : provides
+Article "1" -- "1" Summary : has (generated) >
+User "1" -- "0..*" Article : searches/reads
+User "1" -- "0..*" FoodOrder : places
+FoodOrder "1" -- "1..*" NutritionItem : contains
+
+@enduml

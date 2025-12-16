@@ -1,0 +1,49 @@
+@startuml Deployment
+skinparam handwritten true
+skinparam shadowing false
+skinparam package {
+  borderColor black
+  backgroundColor #DDDDDD
+}
+skinparam node {
+  borderColor #4444FF
+  backgroundColor #BBBBFF
+}
+
+title UML-діаграма розгортання: Science-Life Assistant (RWA/MA) 
+
+node "<<Користувачський пристрій>>" as Client {
+    node "<<Web-навігатор>>" as Browser {
+        artifact "Frontend App (JS)" as FrontendArtifact {
+            folder "React / Vue" as ReactFolder
+        }
+        Browser -- ReactFolder
+    }
+    node "<<Mobile App (Android/iOS)>>" as MobileApp {
+        artifact "Mobile App" as MobileArtifact
+        MobileApp -- MobileArtifact
+    }
+}
+
+node "<<Сервер застосунків>>" as AppServer {
+    node "<<OS Linux>>" as LinuxOS {
+        node "<<Node.js / Spring Boot>>" as AppLogic {
+            artifact "Бізнес-логіка (Node.js)" as BLArtifact
+        }
+        LinuxOS -- AppLogic
+    }
+}
+
+node "<<Сервер бази даних>>" as DBServer {
+    node "<<OS Linux>>" as DBLinuxOS {
+        database "<<PostgreSQL>>" as DB {
+            storage "Реляційна DataBase" as DataStorage
+        }
+        DBLinuxOS -- DB
+    }
+}
+
+' Зв'язки
+Client --> AppServer : REST API (HTTP/HTTPS)
+AppServer --> DBServer : DB Connection (SQL)
+@enduml
